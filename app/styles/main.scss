@@ -1,0 +1,89 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+$font-family-sans-serif: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", Arial, sans-serif ;
+$font-family-serif: Georgia,
+"Times New Roman",
+Times,
+"SimSun" serif !default;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+$font-family-monospace: Menlo,
+Monaco,
+Consolas,
+"Courier New",
+monospace !default;
+
+$grid-gutter-width: 0px !default;
+
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+* {
+  box-sizing: content-box;
+}
+
+
+header {
+  h1 {
+    background-color: #2f74b5;
+    font-size: 30px;
+    margin-top: 0;
+    line-height: 60px;
+    color: #ffffff;
+  }
+}
+
+.content {
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  dl {
+    font-size: 14px;
+    color: #333333;
+    &.dl-horizontal {
+      dt {
+        font-weight: normal;
+      }
+      dd {
+        margin-left: 170px;
+      }
+      dt, dd {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .owl-carousel {
+    .item {
+      position: relative;
+      p {
+        line-height: 40px;
+        background: url(../images/bg01.png) repeat; 
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+    .owl-nav {
+        .owl-prev, .owl-next {
+          position: absolute;
+          width: 16px;
+          height: 33px;
+          top: 50%;
+          margin-top: -15px;
+        }
+        .owl-prev {
+          left: 5px;
+          background: url(../images/bg02.png) no-repeat;
+        }
+        .owl-next {
+          right: 5px;
+          background: url(../images/bg03.png) no-repeat;
+        }
+    }
+  }
+}
